@@ -1,0 +1,26 @@
+{
+  "preset": "laravel",
+  "rules": {
+    "single_line_empty_body": false,
+    "concat_space": {
+      "spacing": "one"
+    },
+    "ordered_imports": {
+      "sort_algorithm": "length",
+      "imports_order": [
+        "class",
+        "function",
+        "const"
+      ]
+    }
+  },
+  "notName": [
+    "*.blade.php"
+  ],
+  "exclude": [
+    "storage",
+    "public",
+    "bootstrap/cache",
+    "lang"
+  ]
+}

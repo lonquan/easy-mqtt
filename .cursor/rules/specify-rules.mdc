@@ -1,0 +1,24 @@
+# easy-mqtt-factory Development Guidelines
+
+Auto-generated from all feature plans. Last updated: 2025-10-18
+
+## Active Technologies
+- PHP 8.4 (001-specify-scripts-bash)
+
+## Project Structure
+```
+src/
+tests/
+```
+
+## Commands
+# Add commands for PHP 8.4
+
+## Code Style
+PHP 8.4: Follow standard conventions
+
+## Recent Changes
+- 001-specify-scripts-bash: Added PHP 8.4
+
+<!-- MANUAL ADDITIONS START -->
+<!-- MANUAL ADDITIONS END -->
