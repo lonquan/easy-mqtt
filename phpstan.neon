@@ -1,0 +1,9 @@
+parameters:
+    level: 6
+    paths:
+        - src
+    treatPhpDocTypesAsCertain: false
+    ignoreErrors:
+        - '#Function app not found#'
+        - '#Function config_path not found#'
+

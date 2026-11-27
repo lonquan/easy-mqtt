@@ -1,0 +1,75 @@
+{
+  "name": "longquan/easy-mqtt",
+  "description": "基于 php-mqtt/client 的 Laravel MQTT Factory",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "mqtt",
+    "mqtt-client",
+    "php-mqtt",
+    "laravel",
+    "laravel-mqtt"
+  ],
+  "authors": [
+    {
+      "name": "lonquan",
+      "email": "root@antcool.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/lonquan/easy-mqtt/issues",
+    "source": "https://github.com/lonquan/easy-mqtt",
+    "docs": "https://github.com/lonquan/easy-mqtt/blob/master/README.md"
+  },
+  "require": {
+    "php": "^8.4",
+    "php-mqtt/client": "^2.0",
+    "illuminate/support": "^13.0",
+    "illuminate/contracts": "^13.0"
+  },
+  "require-dev": {
+    "pestphp/pest": "^3.0",
+    "phpstan/phpstan": "^2.2",
+    "laravel/pint": "^1.13",
+    "mockery/mockery": "^1.6",
+    "illuminate/console": "^13.0",
+    "illuminate/container": "^13.0",
+    "symfony/uid": "^7.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "EasyMqtt\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "pest",
+    "phpstan": "phpstan analyse src --level=6",
+    "check-style": "./vendor/bin/pint --test --ansi",
+    "fix-style": "./vendor/bin/pint --ansi",
+    "check": [
+      "@check-style",
+      "@phpstan",
+      "@test"
+    ],
+    "fix": [
+      "@fix-style"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EasyMqtt\\LaravelMqttFactoryServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
